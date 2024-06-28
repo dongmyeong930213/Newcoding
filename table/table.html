@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 태그</title>
+</head>
+<body>
+    <!-- cellspacing : 경계선사이의 여백의 크기 / cellpadding : 칸 안의 여백의 크기 -->
+    <table border=2 cellspacing="0" cellpadding="50" width="100" style="text-align: center;">
+        <!-- <table></table>표를 만드는 태그 -->
+        <tr>
+            <!-- <tr> 가로줄을 만드는 태그 -->
+         <td colspan="2">1</td>
+         <!-- colspan : 가로칸을 입력한 값만큼 병합 -->
+         <td>2</td>
+        </tr>
+   
+        <tr>
+         <td>3</td>
+         <td rowspan="2" style="font-size:3em;">4</td>
+         <!-- rowspan : 세로칸을 입력한 값만큼 병합 -->
+         <td>5</td>
+        </tr>
+        
+        <tr>
+         <td>6</td>
+         <td style="font-size:2em; color:red;">7</td>
+        </tr>
+       </table>
+<!-- https://uncovered-nutmeg-b8e.notion.site/7-5b3174ba455544a7bb51229a78b794ab 서식테이블 참고주소 -->
+</body>
+</html>

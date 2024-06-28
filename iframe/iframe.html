@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/y8HahNEZxkM" title="보일러를 켰더니 고양이가 누워서 안일어나요" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+    <iframe 
+width="1280" #동영상의 가로길이
+height="720" #동영상의 세로길이
+src="https://www.youtube.com/embed/y8HahNEZxkM" #동영상 주소 
+frameborder="0"  #동영상 플레이어의 테두리두께
+allow="autoplay;">  #동영상의 자동재생 여부 // 동영상 제작자가 외부재생을 막아두었을 경우 자동재생 안됨 # 항상 사용할 수 있는것은 아님
+</iframe> 
+
+<video src="동영상" autoplay muted="muted">
+    <!-- autoplay 속성 = 자동재생 , muted 속성 = 음소거  / autoplay muted="muted" 같이써야 자동재생됨-->
+    이 웹브라우저는 비디오 태그가 지원되지 않습니다.</video>
+
+    <!-- iframe태그 : 동영상 링크를 가져옴.
+     video 태그 :내 컴퓨터에 있는 동영상 파일을 직접 가져옴. 확장자는 MP4,WebM,Ogg-->
+
+     <audio controls><source src="audio.mp3" type="audio/mp3"></audio>
+     <!-- audio태그 : 컴퓨터에 있는 음성 파일 가져옴
+      audio 태그로 source 태그를 감싸는 형태로 써야한다.
+      audio 태그에 controls 속성을 달아줘야 음악 컨트롤러를 눈으로 볼 수 있다.
+      확장자는 MP3,WAV,Ogg 배경음악을 깔때 유용하게 사용할 수 있다--> 
+
+      
+      <!-- https://uncovered-nutmeg-b8e.notion.site/92c115fa098446ec8713d365993486da 참고자료 -->
+</body>
+</html>

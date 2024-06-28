@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabletag</title>
+</head>
+<body>
+<!-- caption / thead / tbody / tfoot -->
+    <!-- 1.마지막 열(row) 추가
+        2. 표의 제목 생성
+        3.첫 열의 글씨 굵어짐 -->
+    <table border=1 cellspacing=0 cellpadding=50 width="100%">
+        <caption style="text-align: left;">caption은 표의 제목</caption>
+        <!--  (caption)캡션은 테이블태그속 제일처음 그리고 하나의 태그만사용 -->
+        <thead> <!-- 제목행을 하나로 묶기 위해 사용 -->
+        <tr>
+            <th colspan="2">1</th>
+            <!-- 강조하려는 셀의 텍스트 굵기(bold) 나타내는 기능 , 자동으로 중앙 정렬
+            통상적으로 다른 사람들이 제목 셀이라는 것을 알 수 있도록 표시 -->
+            <!-- 기본적으로 thead의 첫 행을 강조하기 위해 td가 아닌 , th로 만든 셀을 thead로 묶어준다-->
+            <th>2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+         <td>3</td>
+         <td rowspan="2">4</td>
+         <td>5</td>
+        </tr>
+      
+        <tr>
+         <td>6</td>
+         <td>7</td>
+        </tr>
+    </tbody>
+    <tfoot><!-- 마지막 행을 하나로 묶기 위해 사용 -->
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+    </tfoot>
+    <!-- 첫행과 마지막행을 고정하여 table의 내용만 스크롤하기 위함
+    ex ) 상단바 = thead , 중단바 tbody , 하단바 tfoot -->
+       </table>
+       <!-- https://uncovered-nutmeg-b8e.notion.site/8-7941e39cf6be4cadbed2f809f6f922b5 테이블 참고주소-->
+</body>
+</html>

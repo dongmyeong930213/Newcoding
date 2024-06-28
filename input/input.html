@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+    <!-- input태그의 속성종류 type : 속성 / value : 초기값 / name : 제출시 서버로 전달되는 이름-->
+     text : <input type="text" value="입력해주세요">
+     text : <input type="text" name="Korean"><br>
+     <!-- input Type : 
+      text
+    range
+    datetime-local
+    radio, checkbox
+    file
+    reset, submit -->
+    text : <input type="text"><br>
+    <!-- text : 텍스트를 입력받음 -->
+    range : <input type="range" min="10" max="20" step="2"><br>
+    <!--  range : 슬라이드 바를 조절하여 범위 내의 숫자를 받음
+      기본값은 1~100 (max : 최대값 , min : 최소값 step : 사이의 간격)
+      min:10,max:20,step:2경우 2씩이동하는 5번의 간격으로 변경됨-->
+    datetime-local : <input type="datetime-local"><br>
+    checkbox : <input type="checkbox"><br>
+    <!-- 중복선택 할때 사용 -->
+    checkbox1 : <input type="checkbox"><br>
+    checkbox2 : <input type="checkbox"><br>
+    checkbox3 : <input type="checkbox"><br>
+
+    radio : <input type="radio"><br>
+    <!-- 여러가지중 하나를 선택할 때 사용, 보통 2개 이상의 라디오를 하나로 묶어서 사용
+     name : 그룹화 시켜야 같은 항목으로 인식 -->
+    아이스아메리카노 : <input type="radio" name="drink" value="i_a"><br>
+    아이스라떼 : <input type="radio" name="drink" value="i_l"><br>
+    아이스티 : <input type="radio" name="drink" value="i_t"><br>
+    그냥 얼음 : <input type="radio" name="just" value="i_t"><br>
+    그냥 물 : <input type="radio" name="just" value="i_t"><br>
+
+    reset : <input type="reset"><br>
+    <!-- 폼태그안에 요소를 초기화 하는 기능을 한다. -->
+    file : <input type="file"><br>
+    <!-- 파일 업로드 태그 -->
+    submit : <input type="submit"><br>
+    <!-- 제출버튼 , 데이터를 서버로 전송할때, 폼의 마지막에 사용된다. -->
+    image : <input type="image" src="/imgA/img/KakaoTalk_20240604_100949212_01.jpg" style="width: 100px;"><br>
+    <!-- https://uncovered-nutmeg-b8e.notion.site/input-8bfbe6e3f37543d98dc99e086a012a83 참고자료 -->
+</form>
+</body>
+</html>
